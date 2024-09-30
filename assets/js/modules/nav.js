@@ -12,13 +12,13 @@ export default function printNav() {
     submitButton.type = 'Submit'
     nav.appendChild(submitButton)
 
-    submitButton.onclick = function () {
+    submitButton.addEventListener('click', function () {
         
         console.log(searchInput.value)
         
         let main = document.getElementById('main')
         main.innerHTML = `<p>${searchInput.value}</p>`
 
-    }
+    })
 
 }
